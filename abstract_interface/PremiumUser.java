@@ -1,7 +1,11 @@
-public class PremiumUser extends User {
+public class PremiumUser extends User implements Refundable {
   public PremiumUser(String name) {
     super(name);
     // TODO Auto-generated constructor stub
+  }
+
+  public void refund(double amount){
+    System.out.println("Special feature ....you can apply for refund and this is for the Priumium users only.....!");
   }
 
   public void displayUserType() {
