@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class NonRepeting_character {
+public class DublicateElement {
   public static void main(String[] args) {
     HashMap<Character, Integer> mpp = new HashMap();
     Scanner sc = new Scanner(System.in);
@@ -20,8 +20,8 @@ public class NonRepeting_character {
     }
     System.out.println(mpp);
     for (HashMap.Entry<Character, Integer> ele : mpp.entrySet()) {
-      if (ele.getValue() == 1) {
-        System.out.println("Non Repeating Character are: " + ele.getKey());
+      if (ele.getValue() > 1) {
+        System.out.println("Non Repeating Character are: " + ele.getKey() + " and it frequency is : "+ele.getValue());
       }
     }
   }
