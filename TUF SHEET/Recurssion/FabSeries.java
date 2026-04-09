@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class FabSeries {
   public static int printFabSeries(int n) {
     if (n == 1) {
@@ -7,9 +6,11 @@ public class FabSeries {
     }
     if (n == 0) {
       return 0;
-
     }
-    return printFabSeries(-1) + printFabSeries(n - 2);
+    if (n == 1) {
+      return 1;
+    }
+    return printFabSeries(n - 1) + printFabSeries(n - 2);
   }
 
   public static void main(String[] args) {
